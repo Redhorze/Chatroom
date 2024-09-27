@@ -4,7 +4,124 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All Programs Name List</title>
-  <link rel="stylesheet" href="style.css">
+  <style>body {
+      background: rgb(1,35,73);
+      background: linear-gradient(0deg, rgba(1,35,73,1) 0%, rgba(0,16,18,1) 100%);
+      color: whitesmoke;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100vh;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .Container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: rgb(0,29,60);
+      background: linear-gradient(180deg, rgba(0,29,60,1) 0%, rgba(0,20,32,1) 61%, rgba(0,8,7,1) 100%);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      border-radius: 12px;
+      color: white;
+      max-width: 400px;
+      width: 90%;
+    }
+
+    .Container h2 {
+      color: seagreen;
+      margin-bottom: 15px;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    .programList {
+      list-style-type: none;
+      padding: 0;
+      margin: 0 0 20px;
+      max-height: 300px;
+      overflow-y: auto;
+      width: 100%;
+    }
+
+    .programList li {
+      margin-bottom: 10px;
+      font-size: 1rem;
+      padding: 8px 10px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .programList li:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .button {
+      background-color: darkorange;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: orangered;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      .Container h2 {
+        font-size: 1.5rem;
+      }
+
+      .programList li {
+        font-size: 0.9rem;
+      }
+
+      .button {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .Container h2 {
+        font-size: 1.3rem;
+      }
+
+      .programList li {
+        font-size: 0.8rem;
+      }
+
+      .button {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+      }
+    }</style>
 </head>
 <body>
   <div class="Container">
